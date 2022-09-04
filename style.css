@@ -1,9 +1,3 @@
-/*
- * TODO:
- *  - fix img-source position
- *  - fix background size
- *  - fix header size and with
- */
 body {
   font-family: sans-serif;
 
@@ -22,18 +16,33 @@ header {
   justify-content: center;
   align-items: center;
   text-align: left;
-
-  width: clamp(512px, 40%, 1024px);
-  height: 100vh;
 }
 
-#img-source {
-    text-shadow: 0 0 5px white;
-    text-align: center;
-    position: absolute;
-    top: 95%;
+#hero-text {
+  width: 75ch;
+  font-weight: bold;
 }
 
-#description {
-    width: 75ch;
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+input:not([type="button"]) {
+  width: min(100%, 40ch);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
