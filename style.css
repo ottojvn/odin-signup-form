@@ -1,0 +1,10 @@
+.inpt-contnr {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+input:not([type="button"]) {
+  width: min(100%, 40ch);
+}

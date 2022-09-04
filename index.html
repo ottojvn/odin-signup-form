@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -22,30 +23,30 @@
       <div id="form">
         <h2>Fill your way to your blessed land!</h2>
         <form action="">
-          <div>
+          <div class="inpt-contnr">
             <label for="first-name">First name: <strong>*</strong></label>
-            <input type="text" name="first-name" required />
+            <input type="text" name="first-name" placeholder="Eve" required />
           </div>
-          <div>
+          <div class="inpt-contnr">
             <label for="last-name">Last name: <strong>*</strong></label>
-            <input type="text" name="last-name" required />
+            <input type="text" name="last-name" placeholder="Adam" required />
           </div>
-          <div>
+          <div class="inpt-contnr">
             <label for="email">Email: <strong>*</strong></label>
             <input type="email" name="email" required />
           </div>
-          <div>
+          <div class="inpt-contnr">
             <label for="phone-number">Phone Number: <strong>*</strong></label>
             <input type="tel" name="phone-number" required />
           </div>
-          <div>
+          <div class="inpt-contnr">
             <label for="password">Password: <strong>*</strong></label>
             <input type="password" name="password" required />
           </div>
-          <div>
-            <label for="password-confirmation"
-              >Confirm password: <strong>*</strong></label
-            >
+          <div class="inpt-contnr">
+            <label for="password-confirmation">
+              Confirm password: <strong>*</strong>
+            </label>
             <input type="password" name="password-confirmation" required />
           </div>
         </form>
