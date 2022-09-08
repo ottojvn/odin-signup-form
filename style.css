@@ -1,7 +1,18 @@
+@font-face {
+  font-family: "Mulish";
+  src: url("fonts/Mulish-VariableFont_wght.ttf");
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Mulish";
 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  height: 100vh;
 }
 
 header {
@@ -75,4 +86,60 @@ input:not([type="submit"]):valid {
 
 .invisible {
   opacity: 0;
+}
+
+header > h1 {
+  margin: auto;
+}
+
+header {
+  width: clamp(320px, min(640px, 33vw), 1280px);
+  height: clamp(33vmin, 90vh, 1920px);
+}
+header > h1 {
+  font-size: max(36px, 4rem);
+  text-shadow: 0 0 48px black;
+}
+header > p.sub-title {
+  font-size: max(24px, 2rem);
+  text-shadow: 0 0 36px black;
+}
+header > p {
+  text-shadow: 0 0 24px white;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #9ca6b6;
+  height: 100%;
+}
+
+div#mid {
+  background-color: #778191;
+}
+
+main > div {
+  padding: 0 3em;
+}
+
+.password-requirements {
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 0.5em;
+  background-color: #778191;
+  border-style: none;
+  color: black;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-style: groove;
+  border-width: 2px;
+  border-radius: 5px;
 }
