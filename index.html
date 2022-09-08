@@ -79,11 +79,18 @@
             <div class="password-requirements">
               <p class="form-text">Password requirements:</p>
               <ul>
-                <li class="form-text">Minimum length: 6 characters</li>
-                <li class="form-text">
-                  At least 1 special character (!@#$%&*)
+                <li id="length-req" class="form-text">
+                  Minimum length: 6 characters.
                 </li>
-                <li class="form-text">At least one alphabet letter</li>
+                <li id="special-char-req" class="form-text">
+                  At least 1 special character (!@#$%&*).
+                </li>
+                <li id="alpha-req" class="form-text">
+                  At least one alphabet letter.
+                </li>
+                <li id="number-req" class="form-text">
+                  At least one numerical character.
+                </li>
               </ul>
             </div>
           </div>
@@ -95,7 +102,7 @@
                 id="password"
                 name="password"
                 min-length="6"
-                pattern="^(?=.*[a-zA-Z])(?=.*[!@#$%&*])(?=.*[0-9]).{8,}$"
+                pattern="^(?=.*[a-zA-Z])(?=.*[!@#$%&*])(?=.*[0-9]).{6,}$"
                 required
               />
             </div>
@@ -108,7 +115,9 @@
                 min-length="6"
                 required
               />
-              <p id="mismatch-error" class="form-text invisible">Passwords don't match</p>
+              <p id="mismatch-error" class="form-text invisible">
+                Passwords don't match
+              </p>
             </div>
           </div>
         </form>
@@ -116,7 +125,7 @@
 
       <div id="bottom">
         <input
-          type="button"
+          type="submit"
           name="create-account"
           id="create-account"
           form="sign-up"
