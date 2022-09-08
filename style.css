@@ -29,7 +29,7 @@ form div {
   align-items: left;
 }
 
-input:not([type="button"]) {
+input:not([type="submit"]) {
   width: min(100%, 40ch);
 }
 
@@ -68,7 +68,7 @@ input:invalid {
   border-color: red;
   box-shadow: 0 0 3px red;
 }
-input:valid {
+input:not([type="submit"]):valid {
   border-color: lightgreen;
   box-shadow: 0 0 3px darkgreen;
 }
