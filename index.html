@@ -12,13 +12,14 @@
       <p>Heaven, down here!</p>
       <p id="img-source">
         Image by <a href="https://www.pexels.com/@doma/">Dominika Mazur</a> on
-        <a href="https://www.pexels.com/photo/meadow-of-flowers-13054281/"
-          >Pexels</a
-        >
+        <a href="https://www.pexels.com/photo/meadow-of-flowers-13054281/">
+          Pexels
+        </a>
       </p>
     </header>
+
     <main role="main">
-      <div id="main-top">
+      <div id="top">
         <p id="hero-text">
           Close your eyes, take a deep breath, feel the soft breeze, hear the
           leaves rustling. A piece of heave, down on earth. That's what we're
@@ -27,7 +28,8 @@
         </p>
       </div>
 
-      <div id="main-mid">
+      <div id="mid">
+        <p class="form-text"><strong>All fields are required</strong></p>
         <form action="../sign-up" method="post" id="sign-up" name="sign-up">
           <div class="form-line">
             <div>
@@ -74,9 +76,28 @@
             </div>
           </div>
           <div class="form-line">
+            <div class="password-requirements">
+              <p class="form-text">Password requirements:</p>
+              <ul>
+                <li class="form-text">Minimum length: 6 characters</li>
+                <li class="form-text">
+                  At least 1 special character (!@#$%&*)
+                </li>
+                <li class="form-text">At least one alphabet letter</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-line">
             <div>
               <label for="password">Password:</label>
-              <input type="password" id="password" name="password" required />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                min-length="6"
+                pattern="^(?=.*[a-zA-Z])(?=.*[!@#$%&*])(?=.*[0-9]).{8,}$"
+                required
+              />
             </div>
             <div>
               <label for="password-confirmation">Confirm Password:</label>
@@ -84,14 +105,16 @@
                 type="password"
                 id="password-confirmation"
                 name="password-confirmation"
+                min-length="6"
                 required
               />
+              <p id="mismatch-error" class="form-text invisible">Passwords don't match</p>
             </div>
           </div>
         </form>
       </div>
 
-      <div id="main-bottom">
+      <div id="bottom">
         <input
           type="button"
           name="create-account"
@@ -103,4 +126,5 @@
       </div>
     </main>
   </body>
+  <script src="../script.js"></script>
 </html>

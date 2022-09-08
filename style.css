@@ -46,3 +46,33 @@ form {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.form-text {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.password-requirements {
+  margin: 0;
+}
+.password-requirements > * {
+  margin: 0;
+}
+.password-requirements > ul {
+  list-style-type: none;
+  margin-top: 0.25rem;
+  padding: 0 0 0 1rem;
+}
+
+input:invalid {
+  border-color: red;
+  box-shadow: 0 0 3px red;
+}
+input:valid {
+  border-color: lightgreen;
+  box-shadow: 0 0 3px darkgreen;
+}
+
+.invisible {
+  opacity: 0;
+}
