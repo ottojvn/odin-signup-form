@@ -6,14 +6,14 @@
 body {
   font-family: "Mulish";
   background-color: black;
+  margin: 0 auto;
+  width: fit-content;
+}
 
+.flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: stretch;
-
-  margin: 0 auto;
-  height: 100vh;
 }
 
 header {
@@ -22,16 +22,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-  display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  height: min(100vh, 960px);
 }
 
 #hero-text {
-  width: 75ch;
+  min-width: 40ch;
+  max-width: 75ch;
   font-weight: bold;
 }
 
@@ -90,15 +87,9 @@ input:not([type="submit"]):valid {
 }
 
 header > h1 {
-  margin: auto;
-}
-
-header {
-  min-width: 33%;
-}
-header > h1 {
   font-size: max(36px, 4rem);
   text-shadow: 0 0 48px black;
+  margin: auto;
 }
 header > p.sub-title {
   font-size: max(24px, 2rem);
@@ -107,14 +98,14 @@ header > p.sub-title {
 header > p {
   text-shadow: 0 0 24px white;
   font-weight: bold;
+  padding: 0 1rem;
 }
 
 main {
+  background-color: #9ca6b6;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #9ca6b6;
-  height: 100%;
 }
 
 div#mid {
