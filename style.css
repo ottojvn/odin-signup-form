@@ -5,11 +5,12 @@
 
 body {
   font-family: "Mulish";
+  background-color: black;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   margin: 0 auto;
   height: 100vh;
@@ -93,8 +94,7 @@ header > h1 {
 }
 
 header {
-  width: clamp(320px, min(640px, 33vw), 1280px);
-  height: clamp(33vmin, 90vh, 1920px);
+  min-width: 33%;
 }
 header > h1 {
   font-size: max(36px, 4rem);
@@ -122,7 +122,7 @@ div#mid {
 }
 
 main > div {
-  padding: 0 3em;
+  padding: 0 3rem;
 }
 
 .password-requirements {
@@ -133,7 +133,7 @@ main > div {
 }
 
 input[type="submit"] {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   background-color: #778191;
   border-style: none;
   color: black;
